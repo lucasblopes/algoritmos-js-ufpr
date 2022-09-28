@@ -1,0 +1,2 @@
+Faça uma função que receba como parâmetro um número inteiro e teste se ele é um número binário. Se ele for binário, imprima sim senão imprima nao.
+

@@ -1,0 +1,1 @@
+Faça uma função que receba como parâmetros dois números inteiros não nulos e retorne true se um for o contrário do outro e false em caso contrário.

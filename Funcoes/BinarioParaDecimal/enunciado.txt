@@ -1,0 +1,2 @@
+Faça uma função que receba como parâmetro um número inteiro garantidamente binário e o converta para decimal. Teste sua função usando este código:
+

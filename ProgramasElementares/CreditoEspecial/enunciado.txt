@@ -1,0 +1,7 @@
+Um banco concederá um crédito especial aos seus clientes, mas este crédito será dependente do saldo médio de cada cliente no último ano. Faça um programa que leia do teclado um valor real que é o saldo médio de um cliente específico e calcule o valor do crédito de acordo com a tabela abaixo. Imprima o saldo médio e o valor do crédito.
+
+Saldo médio	Percentual
+de 0 a 200	0
+de 201 a 400	20% do valor do saldo médio
+de 401 a 600	30% do valor do saldo médio
+acima de 601	40% do valor do saldo médio
