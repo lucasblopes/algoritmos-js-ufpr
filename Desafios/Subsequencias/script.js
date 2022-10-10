@@ -12,20 +12,18 @@ function lerSequencia(vetor){
 }
 
 function tem_subsequencias_iguais(v, tam_seg){
-    let q, posicao, iguais = -1;
-    
-    for (let i = 0; ((i <= n - 2*tam_seg) & (iguais != tam_seg)); i++){
-        for (let p = i + tam_seg; ((p <= n - tam_seg) & (iguais != tam_seg)); p++){
+    let vet1, vet2 = []; //vetores que serao comparados
+    let posicao = -1;
+    let achou = false;
+
+    for (let i = 0; i <= n - 2*tam_seg & !achou; i++){
+        for (let p = i + tam_seg; p <= n - tam_seg; p++){
             if (v[i] == v[p]) { //verifica se há um número igual a i no vetor para iniciar a verificação da subsequência
-                iguais = 1; 
-                q = p + 1; //q varre a segunda subsequencia e k varre a primeira
-                for (let k = i + 1; k <= i + tam_seg - 1; k++){
-                    if(v[k] == v[q]){iguais++};
-                    q++;
-                }
+                vet1 = v.slice(i, i + tam_seg); //cria as submatrizes para comparar utilizando .slice(inicio, final + 1)
+                vet2 = v.slice(p, p + tam_seg);
+                if (vet1.join("") == vet2.join("")) {posicao = i; achou = true} //cria uma string para comparar as matrizes
             }
         } 
-        if (iguais == tam_seg){posicao = i};
     }
     return posicao;
 }
@@ -40,7 +38,7 @@ while ((pos == -1) & (tam_subsequencia >= 2)){
 }
 
 if (pos > -1){
-    console.log(pos, " ", tam_subsequencia)
+    console.log(pos, " ", tam_subsequencia + 1)
 } else {
     console.log("Nenhuma subsequencia :(")
 };

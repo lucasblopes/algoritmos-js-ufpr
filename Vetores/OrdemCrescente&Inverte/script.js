@@ -9,19 +9,24 @@ function lerNumeros(vetor, qtd){
     }
 }
 
-function ehCrescente(vetor, qtd){
-    let copia = vetor.slice(); // faz uma copia do vetor com o metodo .slice()
-    copia.sort();
-    if (copia == vetor) {return true} else {return false};
+function ehCrescente(vetor){
+    function compara(a,b) {return a-b};
+    let copia = vetor.slice().sort(compara); // faz uma copia do vetor com o metodo .slice()
+    if (copia.join("") == vetor.join("")) {return true} else {return false};
+}
+
+function ehDecrescente(vetor){
+    function compara(a,b) {return b-a};
+    let copia = vetor.slice().sort(compara);
+    if (copia.join("") == vetor.join("")) {return true} else {return false};
 }
 
 lerNumeros(vetor, qtd);
 console.log(vetor);
 
-if (ehCrescente(vetor, qtd)) {
-    console.log("Os numeros digitados estao em ordem crescente!")
-}else {
-    console.log("Os numeros digitados nao estao em ordem crescente!")
+if (ehCrescente(vetor)) {console.log("Os numeros digitados estao em ordem crescente!")
+}else if (ehDecrescente(vetor)) {console.log("Os numeros digitaos estao em ordem decrescente!")
+}else {console.log("Os numeros digitados nao estao em ordem crescente nem decrescente!")
 };
 
 console.log("Invertendo a ordem do vetor...");
