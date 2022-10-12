@@ -1,0 +1,2 @@
+Le uma matriz e imprime quantos quadrados magicos nao triviais (formados por 1x1) podem ser formados dentro da matriz.
+Um quadrado magico eh uma matriz em que a soma dos elementos das suas linhas, colunas e diagonais possuem o mesmo valor.
