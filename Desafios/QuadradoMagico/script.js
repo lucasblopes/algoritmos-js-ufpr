@@ -93,7 +93,7 @@ function qtdQuadradosMagicos(mat){
             }
         }
         matAux = matVazia.slice(); //reseta a matriz auxiliar
-    }
+    } 
     return cont;
 }
 
