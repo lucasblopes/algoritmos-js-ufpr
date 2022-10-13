@@ -1,2 +1,1 @@
 Faça um programa que leia do teclado dois números positivos ímpares A e B onde (A <= B) e calcule o produto dos números ímpares de A até B.
-Isto é, calcule:

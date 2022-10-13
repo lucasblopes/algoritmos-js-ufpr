@@ -6,7 +6,8 @@ let vetor = [];
 function instrucoes() { 
     console.log("[1]: Adiciona um numero no final do vetor;");
     console.log("[2]: Remover um elemento do vetor;");
-    console.log("[3]: Ordenad o vetor em ordem crescente;");
+    console.log("[3]: Ordena o vetor em ordem crescente;");
+    console.log("[4]: Ordena o vetor em ordem decrescente;");
     console.log("[0]: Imprime o vetor e finaliza as operações;");
 }
 
@@ -24,7 +25,7 @@ do {
         case 2:
             numero = parseFloat(readlineSync.question("Digite o numero que quer remover do vetor: "));
             let achou = false;
-            for (let i = 0; i < vetor.length; i++){
+            for (let i in vetor){
                 if (vetor[i] == numero) {
                     vetor.splice(i, 1);
                     achou = true;
@@ -35,7 +36,11 @@ do {
             break;
         //ordena em ordem crescente os numeros do vetor,  (metodo .sort())
         case 3: 
-            vetor.sort();
+            vetor.sort((a,b) => a-b);
+            console.log(vetor);
+            break;
+        case 4:
+            vetor.sort((a,b) => b-a);
             console.log(vetor);
             break;
         default:
@@ -43,5 +48,6 @@ do {
             console.log("Comando invalido")};
             break;
     }
+
 } while (comando != 0);
 console.log("vetor resultante: ", vetor);

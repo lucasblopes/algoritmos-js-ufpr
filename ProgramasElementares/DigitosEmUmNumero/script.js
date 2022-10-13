@@ -11,7 +11,7 @@ resto = n;
 while (resto != 0) {
     resto = (resto/10)|0; //divisao inteira de resto por 10
     digito = resto % 10; //digito em questao e o resto da divisao de n por 10
-    if (digito = m) {cont += 1};
+    if (digito == m) {cont += 1};
 }
 
 console.log(cont);

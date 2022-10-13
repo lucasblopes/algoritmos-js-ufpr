@@ -43,7 +43,7 @@ function checarDistintos(vetor, distintos, ocorrencias) {
 }
 
 function contarOcorrencias(vetor, distintos, ocorrencias){
-    for (let i = 0; i < distintos.length; i++) {
+    for (let i in distintos) {
         ocorrencias[i] = 0;
         for (let j = 0; j < vetor.length; j++) {
             if (distintos[i] == vetor[j]) {ocorrencias[i]++};
@@ -52,7 +52,7 @@ function contarOcorrencias(vetor, distintos, ocorrencias){
 }
 
 function imprimirOcorrencias(distintos, ocorrencias) {
-    for (let i = 0; i < distintos.length; i++){
+    for (let i in distintos){
         if (ocorrencias[i] == 1) {
             console.log(distintos[i], " ocorre 1 vez.")
         }else {
