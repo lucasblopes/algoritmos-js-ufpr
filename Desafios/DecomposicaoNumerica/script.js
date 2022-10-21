@@ -1,4 +1,4 @@
-/*Questão 2 prova Apple Developer Academy
+/*
 Input: Numer inteiro
 Output: Decomposição do numero na base decimal */
 

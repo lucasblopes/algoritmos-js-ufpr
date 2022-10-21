@@ -1,4 +1,4 @@
-/*Questão 1 prova Apple Developer Academy*
+/*
 Input: string multipla de N seguida de um numero N
 Output: string espelhada de N em N caracteres
 */

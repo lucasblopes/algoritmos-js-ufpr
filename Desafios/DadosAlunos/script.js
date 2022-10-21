@@ -1,4 +1,4 @@
-/*Questão 3 prova Apple Developer Academy
+/*
 ex input: João Peixoto, 14 anos, Quinta série da Manhã, 1223
 ex output: Nome: João Peixoto
            Idade: 14 anos
